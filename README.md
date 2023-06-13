@@ -12,3 +12,4 @@ Flutter로 모바일 개발 친해지기
 | 날짜         | 공부한 내용                                                         |
 |------------|----------------------------------------------------------------|
 | 2023-06-12 | Section1-2. Flutter Introduction, Install and Run                           |
+| 2023-06-13 | Section3. UI Challenge - Header, Button Reuse                           |
