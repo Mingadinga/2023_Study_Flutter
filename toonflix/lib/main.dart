@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/Button.dart';
+import 'package:toonflix/widgets/currency_card.dart';
 
 class Player {
   String? name;
@@ -19,8 +20,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: const Color(0xFF181818),
-          body: Padding(
+        backgroundColor: const Color(0xFF181818),
+        body: SingleChildScrollView(
+          child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -92,9 +94,70 @@ class App extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 100,
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Wallets",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 36,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Text(
+                      "View All",
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.8),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Transform.translate(
+                  offset: const Offset(0, 0),
+                  child: const CurrencyCard(
+                    name: 'Euro',
+                    amount: '6 428',
+                    code: 'EUR',
+                    icon: Icons.euro_rounded,
+                    isInverted: false,
+                    order: 0,
+                  ),
+                ),
+                Transform.translate(
+                  offset: const Offset(0, -20),
+                  child: const CurrencyCard(
+                    name: 'Bitcoin',
+                    amount: '9 785',
+                    code: 'BTC',
+                    icon: Icons.currency_bitcoin_rounded,
+                    isInverted: true,
+                    order: 1,
+                  ),
+                ),
+                Transform.translate(
+                  offset: const Offset(0, -40),
+                  child: const CurrencyCard(
+                    name: 'Dollar',
+                    amount: '428',
+                    code: 'USD',
+                    icon: Icons.attach_money_rounded,
+                    isInverted: false,
+                    order: 2,
+                  ),
+                ),
               ],
             ),
-          )),
+          ),
+        ),
+      ),
     );
   }
 }
