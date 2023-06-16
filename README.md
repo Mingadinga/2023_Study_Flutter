@@ -15,3 +15,4 @@ Flutter로 모바일 개발 친해지기
 | 2023-06-13 | Section3. UI Challenge - Header, Button Reuse                           |
 | 2023-06-14 | Section3. UI Challenge - Card, Icon, Translate, Scroll                           |
 | 2023-06-15 | Section4. Stateful Widget                           |
+| 2023-06-16 | Section5. Pomodoro App                              |
