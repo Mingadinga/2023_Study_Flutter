@@ -18,3 +18,4 @@ Flutter로 모바일 개발 친해지기
 | 2023-06-16 | Section5. Pomodoro App                              |
 | 2023-06-17 | Section6. Webtoon App - Data Fetching                              |
 | 2023-06-18 | Section6. Webtoon App - List View, Image Network, Route                              |
+| 2023-06-19 | Section6. Webtoon App - Detail Screen                              |
